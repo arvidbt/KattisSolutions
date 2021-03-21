@@ -1,4 +1,8 @@
+l1 = [1,1,2,2,2,8]
+l2 = [int(l2) for l2 in input().split(" ")]
 
-l1 = [1,2,3]
-l2 = [elem + 1 for elem in l1]
-print(l2)
+out = ""
+for i, v in enumerate(l2):
+    out += str(l1[i] - v) + " "
+
+print(out.rstrip())

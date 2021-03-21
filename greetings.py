@@ -1,3 +1,2 @@
-x = input()
-y = len(x) - 2
-print("h" + "e" * y * 2 + "y")
+
+print("h" + (int(input().count('e')) * 2 * "e")+ "y")
