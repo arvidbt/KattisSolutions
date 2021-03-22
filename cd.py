@@ -10,3 +10,5 @@ for _ in range(m):
     jill.add(int(input()))
 
 print(jack.intersection(jill))
+
+DOES NOT WORK
