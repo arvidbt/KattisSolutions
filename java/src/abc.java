@@ -4,6 +4,7 @@ import java.lang.Math;
 public class abc {
     public static void main(String[] args){
         Scanner scanner = new Scanner(System.in);
+
         int first_int = scanner.nextInt();
         int second_int = scanner.nextInt();
         int third_int = scanner.nextInt();
@@ -16,8 +17,9 @@ public class abc {
 
         int medium = (first_int + second_int + third_int) - (small2 + large2);
 
-        Scanner scanner1 = new Scanner(System.in);
-        String letters = scanner1.nextLine();
+        //Scanner scanner1 = new Scanner(System.in);
+        scanner.nextLine();
+        String letters = scanner.nextLine();
 
         if(letters.equals("ABC")){
             System.out.println(small2 + " " + medium + " " + large2);
@@ -38,6 +40,5 @@ public class abc {
             System.out.println(large2 + " " + small2 + " " + medium);
         }
         scanner.close();
-        scanner1.close();
     }
 }
