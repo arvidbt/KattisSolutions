@@ -4,7 +4,6 @@ import java.util.*;
 public class basicProgramming1 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-
         int N = scanner.nextInt();
         int t = scanner.nextInt();
         long[] arr = new long[N];
@@ -56,13 +55,15 @@ public class basicProgramming1 {
 
             case 6:
                 String alphabet = "abcdefghijklmnopqrstuvwxyz";
-                String output = "";
+
+                char[] print = new char[N];
+
 
                 for(int i = 0; i < N; i++){
                     int character = (int)arr[i] % 26;
-                    output = output + alphabet.charAt(character);
+                    print[i] = alphabet.charAt(character);
                 }
-                System.out.println(output);
+                System.out.println(print);
                 break;
 
             case 7:
@@ -76,7 +77,7 @@ public class basicProgramming1 {
                         break;
                     }
 
-                    if(index == N-1){
+                    else if(index == N-1){
                         System.out.println("Done");
                         break;
                     }
