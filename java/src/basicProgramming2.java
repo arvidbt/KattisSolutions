@@ -47,6 +47,7 @@ public class basicProgramming2 {
                 break;
 
             case 3:
+
                 int x = N/2;
                 HashMap<Long, Integer> count = new HashMap<>();
 
@@ -56,15 +57,11 @@ public class basicProgramming2 {
                         a = count.get(arr[i]);
                     }
                     count.put(arr[i], a+1);
-                }
-
-                for(int i = 0; i < N; i++){
-                    if(count.get(arr[i]) > x){
+                    if(a+1 > x){
                         System.out.println(arr[i]);
                         System.exit(0);
                     }
                 }
-
                 System.out.println("-1");
                 break;
 
@@ -79,17 +76,14 @@ public class basicProgramming2 {
                 break;
                 
             case 5:
-                String printThisInstead = "";
+
                 Arrays.sort(arr);
 
                 for(int i = 0; i < N; i++){
                     if(arr[i] >= 100 && arr[i] <= 999){
-                        printThisInstead = printThisInstead + arr[i] + " ";
+                        System.out.print(arr[i] + " ");
                     }
                 }
-                System.out.println(printThisInstead);
-
-
                 break;
         }
     }
